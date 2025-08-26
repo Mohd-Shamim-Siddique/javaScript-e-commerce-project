@@ -2,9 +2,6 @@ import { addToCart } from "./addToCart";
 
 const cartProductContainer = document.querySelector('.cartProductContainer')
 const itemAdded = document.querySelector('.item-added')
-console.log(itemAdded);
-
-
 
 export function updateCartItemCount() {
     const cartCountElement = document.getElementById('cart-count');
