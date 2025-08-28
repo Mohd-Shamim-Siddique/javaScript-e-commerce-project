@@ -402,9 +402,9 @@ main {
   background-color: #218838;
 }
 
-.item-added{
-  color: #fefefe;
-  background-color: #ff0303;
+#itemAdded{
+  color: #202020;
+  background-color: #3aa6d1;
   position: fixed;
   top: 180px;
   left: 45%;

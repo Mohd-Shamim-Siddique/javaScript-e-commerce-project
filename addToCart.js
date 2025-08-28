@@ -5,7 +5,6 @@ export const addToCart = (element, count, originalPrice) => {
     if (count === 0) return;
 
     let existingCart = JSON.parse(localStorage.getItem('product')) || [];
-    console.log(JSON.parse(localStorage.getItem('product')));
 
 
     const currentProduct = {
@@ -22,7 +21,6 @@ export const addToCart = (element, count, originalPrice) => {
 
     if (filteredItems.length > 0) {
         existingCart = existingCart.map(item => {
-            console.log(item.quantity)
             if (item.id === element.id) {
                 const updatedQuantity = item.quantity + count;
                 return {
